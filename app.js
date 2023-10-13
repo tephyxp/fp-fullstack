@@ -7,6 +7,7 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static('./cliente')) // para conectar con parte frontend
 
 const port = process.env.PORT || 2018
 app.listen(port,() => {
@@ -16,14 +17,18 @@ app.listen(port,() => {
 app.use("/api",
 require("./routes/productRoutes"))
 
+
 app.get("/", (req, res)=> {
     res.status(200).send("<h1>Final project Fullstack</h1>")
 })
+
 
 app.use((err, req, res, next) => {
     console.error(err);
     res.status(500).json({ error: 'Internal Server Error' });
 });
+
+
 
 // const mysql = require("mysql2");
 
