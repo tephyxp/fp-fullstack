@@ -20,8 +20,8 @@
             <a href="#" class="hover:text-[#613e0a] text-[#707070]">Contact Us</a>
           </li>
           <li>
-            <button @click="toggleCart" class="hover:text-[#613e0a] text-[#707070]">Shopping Cart
-              {{ shoppingCart.length }}</button>
+            <!-- <button @click="toggleCart" class="hover:text-[#613e0a] text-[#707070]">Shopping Cart
+              {{ shoppingCart.length }}</button> -->
           </li>
         </ul>
         <ShoppingCart :selectedProducts="shoppingCart" />
