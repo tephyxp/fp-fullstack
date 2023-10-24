@@ -8,7 +8,7 @@
     "start": "nodemon app.js",
     "migrate": "node ./config/database.js"
   },
-  "keywords":[],
+  "keywords": [],
   "author": "Stephanie Céspedes",
   "license": "ISC",
   "dependencies": {
@@ -17,6 +17,5 @@
     "express": "^4.18.2",
     "mysql2": "^3.6.1",
     "nodemon": "^3.0.1"
-  },
-  "devDependencies":{}
+  }
 }
